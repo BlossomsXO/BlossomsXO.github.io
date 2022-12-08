@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <script 
+        type="text/javascript" 
+        id="www-widgetapi-script" 
+        src="https://www.youtube.com/s/player/ac058a09/www-widgetapi.vflset/www-widgetapi.js" 
+        async
+        >
+
+    </script>
+    <script src="http://www.youtube.com/iframe_api"></script>
+    <head>
+        <title>ｓｕｉｃｉｄｅ</title>
+        <meta name = "Description" content="Work in progress">
+        <meta name = "Keywords" content="Suicide, team, catgirl, meow">
+        <meta charset="UTF-8">
+        <link rel = "stylesheet" type ="text/css" href="team.css">
+        <link rel = "shortcut icon" href="favicon.png">
+        <script>
+            var tag = document.createElement('script');
+            tag.src = "http://www.youtube.com/iframe_api";
+
+            var fScriptTag = document.getElementsByTagName('script')[0];
+            fScriptTag.parentNode.insertBefore(tag, fScriptTag);
+
+                var player;
+                function onYoutubePlayerAPIReady() {
+                    player = new YT.Player('player', {
+                        height: '0',
+                        width: '0',
+                        videoId: 'zVQJw0EeriI',
+                        playerVars:{'mute' : 0, 'autoplay':1},
+                        events: {  }
+                    });
+                }
+        </script>
+        <script type="text/javascript">
+            <!--
+            var b_timer = null; // blink timer
+            var b_on = true; // blink state
+            var blnkrs = null; // array of spans
+            
+            function blink() {
+                var tmp = document.getElementsByTagName("span");
+                if (tmp) {
+                    blnkrs = new Array();
+                    var b_count = 0;
+                    for (var i = 0; i < tmp.length; ++i) {
+                        if (tmp[i].className == "blink") {
+                            blnkrs[b_count] = tmp[i];
+                            ++b_count;
+                        }
+                    }
+                    // time in m.secs between blinks
+                    // 500 = 1/2 second
+                    blinkTimer(700);
+                 }
+            }
+            
+            function blinkTimer(ival) {
+                if (b_timer) {
+                    window.clearTimeout(b_timer);
+                    b_timer = null;
+                }
+                blinkIt();
+                b_timer = window.setTimeout('blinkTimer(' + ival + ')', ival);
+            }
+            
+            function blinkIt() {
+                for (var i = 0; i < blnkrs.length; ++i) {
+                    if (b_on == true) {
+                        blnkrs[i].style.visibility = "hidden";
+                    }
+                    else {
+                        blnkrs[i].style.visibility = "visible";
+                    }
+                }
+                b_on =!b_on;
+            }
+            //-->
+            </script>
+    </head>
+    <body onload="blink();">
+        <div id="wrapper">
+            <h1 style ="color:#c1b492;"> suicide.team<span class ="blink">▕</span></h1>
+        </div>
+        </div>
+        <div id="player"></div>
+        <iframe id="player"
+        frameborder="0"
+        allowfullscreen
+        allow="accelerometer; autoplay; clipboard-write;encrypted-media; gyroscope; picture-in-picture"
+        title="Alcian Blue - Years Too Late"
+        src="https://www.youtube.com/embed/zVQJw0EeriI?rel=0&amp;&autoplay=1&controls=0&disablekb=0&showinfo=0&enablejsapi=1&widgetid=1"
+        width="0"
+        height="0" 
+        allow="autoplay"
+        sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox"
+        >
+        </iframe>
+    </body>
+
+</html>
