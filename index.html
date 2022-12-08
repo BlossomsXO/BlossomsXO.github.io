@@ -30,7 +30,12 @@
                         width: '0',
                         videoId: 'zVQJw0EeriI',
                         playerVars:{'mute' : 0, 'autoplay':1},
-                        events: {  }
+                        events: {
+                        'onReady': function (event) {
+                            event.target.setVolume(50);
+                            event.target.playVideo();
+                        }
+                        }
                     });
                 }
         </script>
