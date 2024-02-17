@@ -8,15 +8,16 @@ html {
     height: 100%;
 }
 
-div#wrapper{
-    position:absolute;
+div#wrapper {
+    position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    left:0;
-    right:0;
+    left: 50%;
+    transform: translate(-50%, -50%);
     margin: 0 auto;
     animation: fadeIn 1s ease;
+    max-width: 90%; /* Adjust the value as needed */
 }
+
 H1 { 
     text-align: center;
     font-size: 2em;
@@ -35,4 +36,29 @@ iframe#player{
     border-style: inset;
     border-color: initial;
     border-image: initial;
+}
+
+#play-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: transparent;
+    color: transparent;
+    padding: 20px; /* Adjust the value as needed */
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 9999;
+    border: none;
+    outline: none;
+}
+
+#play-button::before {
+    content: "⏵︎/⏸︎";
+    color: white;
+    font-size: 32px;
+    color: #c1b492;
+}
+
+.custom-heading {
+    color: #c1b492;
 }
